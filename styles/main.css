@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap');
 
 /* ==========GENERAL ELEMENTS===========
 ========================================= */
@@ -253,7 +254,9 @@ main .description .description__head span{
     padding-top: 40px;
 }
 .reviews .container{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*___________Reviews-head________________*/
@@ -267,10 +270,14 @@ main .description .description__head span{
 
 /*__________Reviews-body__________________*/
 .reviews__body {
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
 }
 
 
+/*----Users-Block----*/
 .reviews__body .reviews__users-block {
     align-items: center;
     display: flex;
@@ -281,6 +288,117 @@ main .description .description__head span{
     align-items: center;
 }
 
-.users-block__icons img {
-    max-width: auto;
-} 
+.reviews__arrow{
+    padding: 0 1.5625vw;
+    cursor: pointer;
+}
+
+
+/*----User-name-Block----*/
+.reviews__user-name{
+    margin: 1.875vw 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.reviews__user-name .user-name{
+    color: #7dc39f;
+    font-size: 2.4rem;
+}
+
+.reviews__user-name .user-status{
+font-size: 1.6rem;
+}
+
+/*----User-status-Block----*/
+.reviews__user-text{
+    width: 40.15625vw;
+    margin-bottom: 2.34375vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.reviews__user-dots {
+    margin-bottom: 2.291666666666667vw;
+}
+
+
+/* =========About-us-BLOCK========
+============================= */
+.about-us__head{
+    padding-top: 1.92708333333333vw;
+    padding-bottom: 3.90625vw;
+    font-size: 4.6rem;
+    text-align: center;
+}
+
+.about-us__body{
+    display: flex;
+    justify-content: center;
+}
+
+.about-us__body .about-us__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    width: 21.71875vw;
+    font-size: 1.9rem;
+    font-weight: 400;
+
+    margin-left: 0.88541666666667vw;
+}
+
+.about-us__body .about-us__info span{
+    margin-bottom: 2.13541666666667vw;
+}
+
+.about-us__body .about-us__info .btn{
+    text-align: center;
+    width:11.45833333333333vw;
+    color: #000;
+    border: 1px solid #7dc39f;
+    padding: 0.83333333333333vw 1.25vw;
+}
+
+
+/* ==============Order-Block=============
+=========================================== */
+
+.order{
+    height: 31.82291666666667vw;
+
+    background: url(/assets/img/order-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+.order .container{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*______Order-body___________*/
+
+.order__body{
+    margin-top: 2.23958333333333vw;
+    width: 22.8125vw;
+}
+
+.order__body .modal{
+    background-color: #f7f7f7;
+}
+
+.modal .modal__head{
+    color: #323232;
+    font-size: 3.7rem;
+    font-weight: 700;
+
+   display: flex;
+   justify-content: center;
+}
