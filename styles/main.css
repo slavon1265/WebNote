@@ -1,0 +1,291 @@
+
+/* ==========GENERAL ELEMENTS===========
+========================================= */
+*{
+    box-sizing: border-box;
+}
+html, body {
+    padding: 0;
+    margin: 0;
+    
+}
+html{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+    min-width: 100%;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+/* =========GENERAL CLASES============
+========================================= */
+
+.content-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+}
+
+.container{
+    margin-left: 15.36458333333333%;
+    margin-right: 21.09375%;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 0.1916666666667% 2.05208333333333%;
+    transition: 0.4s transform;
+    color: #fff;
+    width: fit-content;
+    cursor: pointer;   
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.head-title{
+    color: #7dc39f;
+    opacity: 0.8;
+    font-weight: 800;
+}
+/* =========HEADER============
+=============================== */
+
+header {
+    position: relative;
+    width: 100%;
+    float: left;
+    /* background: url(/assets/img/header-bg-1.png) no-repeat top;
+    background-size: contain; */
+}
+
+header .header-bg{
+    position: absolute;
+    width: 100%;
+    z-index: -1000;
+}
+
+.bg-for-nav-bar{
+    position: absolute;
+    height: 5.57291666666667vw;
+    width: 100%;
+    background-color: #000;
+    opacity: 0.24;
+    z-index: -900;
+}
+
+
+header .header__container .nav-bar{
+    height: 5.57291666666667vw;
+    margin: 0 1.82291666666667%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.2rem;
+
+}
+
+.nav-bar .logo-name {
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.nav-bar section.navigation{
+    display: flex;
+}
+
+.nav-bar section.navigation .nav-item {
+    margin-left: 2vw;
+    color:#fff;
+    opacity: 0.8;
+    font-weight: 300;
+}
+
+.nav-item{
+
+}
+
+.header__container .header__body {
+    margin-top: 10.83333333333333vw;
+    margin-left: 4.16666666666667vw;
+    /* padding-bottom: ; */
+}
+
+.header__body .header__order-block {
+    margin-bottom: 1.19791666666667vw;
+    color: #fff;
+    font-size: 3.317rem ;
+    font-weight: 300;
+}
+
+.header__body .order-btn {
+    
+    background-color: #d73149;
+    color: #fff;
+    font-size: 3.139rem;
+    font-weight: 300;
+}
+
+
+/*=====MAIN CONTENT BOX=========
+=================================== */
+main{
+width: 100%;
+}
+
+
+
+/*===========Description-Block=========
+=========================================*/
+main .description{
+
+    margin-bottom: 43px;
+}
+main .description .container{
+}
+
+main .description .description__head{
+    margin-bottom: 42px;
+    text-align: center;
+}
+main .description .description__head span{
+    font-size: 4rem;
+}
+
+.description .description__body {
+    display: flex;
+    margin-bottom: 62px;
+}
+
+
+/*______________Description-Slider_____________*/
+.description__slider{
+    margin-right: 10.67708333333333%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.description__slider .slider-holder{
+    min-width: 25.72916666666667vw;
+    min-height: 18.02083333333333vw;
+    
+    background: url(/assets/img/pic-holder.png) no-repeat;
+    background-size: contain; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-holder img{
+    max-width: 25vw;
+}
+
+.description__slider .slider-dots {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/*______Description-content-box_____________*/
+
+.description__body .description__content{
+    min-width: 19.27083333333333%;
+}
+
+.description__content__item {
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.description__content__item .img-element {
+    width: 2.44791666666667%;
+    height: 2.44791666666667%;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+ .description__content__info{
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.description__content__info > .description__content__head{
+    font-weight: bold;
+    color: #7dc39f;
+    padding-bottom: 4px;
+}
+
+
+/*___________Description-footer__________*/
+
+.description__footer {
+    display: flex;
+    justify-content: center;
+}
+
+.description__footer .order-btn {
+    text-align: center;
+    background-color: #d73149;
+    width: 9.95vw;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/*=============Reviews-Block===============
+/* ======================================= */
+.reviews{
+    
+    background-color: #323232;
+    font-weight: 700;
+    padding-top: 40px;
+}
+.reviews .container{
+    
+}
+
+/*___________Reviews-head________________*/
+
+.reviews__head{
+    text-align: center;
+    font-size: 3.3rem;
+    padding-bottom: 43px;
+}
+
+
+/*__________Reviews-body__________________*/
+.reviews__body {
+    
+}
+
+
+.reviews__body .reviews__users-block {
+    align-items: center;
+    display: flex;
+}
+
+.reviews__users-block > .users-block__icons{
+    display: flex;
+    align-items: center;
+}
+
+.users-block__icons img {
+    max-width: auto;
+} 
