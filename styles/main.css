@@ -139,8 +139,8 @@ width: 100%;
 /*===========Description-Block=========
 =========================================*/
 main .description{
-
-    margin-bottom: 43px;
+    padding-top: 35px;
+    padding-bottom: 43px;
 }
 main .description .container{
 }
@@ -155,6 +155,7 @@ main .description .description__head span{
 
 .description .description__body {
     display: flex;
+    justify-content: center;
     margin-bottom: 62px;
 }
 
@@ -164,12 +165,15 @@ main .description .description__head span{
     margin-right: 10.67708333333333%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    
+    margin-left: 34px;
 }
 .description__slider .slider-holder{
-    min-width: 25.72916666666667vw;
-    min-height: 18.02083333333333vw;
-    
+    /* min-width: 25.72916666666667vw;
+    min-height: 18.02083333333333vw; */
+    align-self: center;
+
     background: url(/assets/img/pic-holder.png) no-repeat;
     background-size: contain; 
 
@@ -204,11 +208,10 @@ main .description .description__head span{
     align-items: center;
 }
 .description__content__item .img-element {
-    width: 2.44791666666667%;
-    height: 2.44791666666667%;
     display: flex;
     justify-content: space-around;
 }
+
 
 
  .description__content__info{
@@ -235,7 +238,7 @@ main .description .description__head span{
 .description__footer .order-btn {
     text-align: center;
     background-color: #d73149;
-    width: 9.95vw;
+    min-width: 9.84375vw;
     font-size: 2rem;
     font-weight: 500;
 }
