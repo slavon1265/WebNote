@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inpt{
+            height: 200px;
+            width: 500px;
+            font-size: 100px;
+        }
+        .reslt{
+            margin-top: 15px;
+            border: 1px solid #000;
+            min-width: 100px;
+            text-align: center;
+            font-size: 50px;
+        }
+        .block-parent{
+            width: 500px;
+            height: 200px;
+            background-color: darkgoldenrod;
+            transition: 2s;
+        }
+        .block-child{
+            background-color: blueviolet;
+            width: 20%;
+            height: 20%;
+            transition: ease-in 2s;
+        }
+        .block-child:active  .block-parent{
+            background-color: #7a3c3c;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="number" class="inpt">
+    <div for="" class="reslt"></div>
+
+    <div class="block-parent">
+        <div class="block-child"></div>
+    </div>
+
+
+    <script>
+
+        let input = document.querySelector('.inpt'),
+            result = document.querySelector('.reslt');
+
+        input.addEventListener('input', function(){
+            let innresult = this.value / 19.2 + 'vw';
+            result.innerText = innresult;
+            navigator.clipboard.writeText(innresult)
+        })
+
+
+    </script>
+</body>
+</html>

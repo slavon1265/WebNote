@@ -12,7 +12,7 @@ html, body {
 }
 html{
     font-family: 'Open Sans', sans-serif;
-    font-size: 10px;
+    font-size: 0.5208333333333334vw;
     min-width: 100%;
 }
 
@@ -369,7 +369,7 @@ font-size: 1.6rem;
 =========================================== */
 
 .order{
-    height: 31.82291666666667vw;
+    min-height: 31.82291666666667vw;
 
     background: url(/assets/img/order-bg.jpg);
     background-repeat: no-repeat;
@@ -387,8 +387,12 @@ font-size: 1.6rem;
 
 .order__body{
     margin-top: 2.23958333333333vw;
+    margin-bottom: 4.635416666666667vw;
     width: 22.8125vw;
 }
+
+
+/*__________Order-modal______________*/
 
 .order__body .modal{
     background-color: #f7f7f7;
@@ -401,4 +405,155 @@ font-size: 1.6rem;
 
    display: flex;
    justify-content: center;
+
+   padding-top: 1.875vw;
+   padding-bottom: 1.77083333333333vw;
+}
+
+.modal .modal__body{
+ padding: 0 2.13541666666667vw;
+}
+
+.modal__body__element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.51041666666667vw;
+}
+
+.modal__body__element label{
+    color: #717171;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.4166666666666667vw;
+    display: flex;
+    align-items: flex-start;
+}
+
+.modal__body__element input{
+    padding: 0.98958333333333vw;
+    border: 1px solid #ebebeb;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #2e2e2e;
+    font-size: 1.7rem;
+}
+
+.modal .form-descript{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2.03125vw;
+}
+    .star{
+        color: #ff0000;
+        font-size: 1.6rem;
+        text-align: top;
+    }
+
+
+.form-descript .form-descript-text{
+width: 9.791666666666668vw;
+font-size: 1.6rem;
+}
+
+/*_____________Order-btn____________*/
+.order__body .btn-holder{
+    display: flex;
+    justify-content: center;
+}
+.order__body .send-btn{
+    padding: 0.6770833333333334vw 2.1875vw;
+    font-size: 2rem;
+    background-color: #d73149;
+}
+
+/*===================Footer================
+============================================== */
+
+footer{
+    padding-top: 2.0833333333333335vw;
+    color: #fff;
+    width: 100%;
+    background-color: #323232;
+    height: 18.75vw;
+}
+
+.footer__head{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+
+    margin-bottom: 2.3958333333333335vw;
+}
+
+/*________footer-body____________*/
+.footer__body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__body-element{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+.footer-titles{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.footer-icons{
+    margin-right: 0.36458333333333337vw;
+    max-width: 0.9375vw;
+}
+
+[contain-icon]{
+    display: flex;
+    align-items: center;
+}
+
+/*______footer-location______*/
+
+.footer__location-title{
+    margin-bottom: 0.7291666666666667vw;
+}
+
+
+
+
+/*______footer-contacts______*/
+.footer__contacts-title{
+    margin-bottom: 0.7291666666666667vw;
+}
+
+footer .phone-icon{
+    min-width: 0.9375vw;
+}
+.footer__contacts-number{
+    margin-bottom: 1.3020833333333335vw;
+}
+
+footer .email-icon{
+    min-width: 1.40625vw;
+}
+
+/*__________footer-links__________*/
+
+.footer__links-title{
+    margin-bottom: 0.625vw
+}
+
+ .footer__links-links{
+    display: flex;
+    justify-content: flex-end;
+} 
+
+.footer__links-links img{
+    margin-right: 0.8333333333333334vw;
+    width: 1.6145833333333335vw;
+}
+
+footer .footer__links-links img:last-child{
+    margin-right: 0;
 }
