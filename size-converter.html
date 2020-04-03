@@ -4,57 +4,237 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <style>
+        html{
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+        }
+        body{
+            background-color: #000;
+            cursor: crosshair;
+            height: 100%;
+            
+        }
+        .container{
+            height: 100%;
+        }
+        .input-holder{
+            text-align: center;
+        }
         .inpt{
+            background-color: rgb(43, 43, 43);
+            color: #fff;
             height: 200px;
-            width: 500px;
+            min-width: 30%;
             font-size: 100px;
+            text-align: center;
         }
         .reslt{
+            margin: 0 auto;
             margin-top: 15px;
-            border: 1px solid #000;
-            min-width: 100px;
+            padding: auto 50px;
+
+            border: 1px solid rgb(145, 145, 145);
+            min-width: 30%;
+            max-width: fit-content;
+            min-height: 200px;
+            
+
             text-align: center;
-            font-size: 50px;
+            line-height: 200px;
+            font-size: 100px;
+            font-weight: 500;
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(13, 73, 11);
+            
         }
-        .block-parent{
-            width: 500px;
-            height: 200px;
-            background-color: darkgoldenrod;
-            transition: 2s;
+
+        marquee{
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(16, 255, 8);
+            font-size: 25px;
+            letter-spacing: 0px;
+            transition: 0.5s;
         }
-        .block-child{
-            background-color: blueviolet;
-            width: 20%;
-            height: 20%;
-            transition: ease-in 2s;
+
+        #speed-controller{
+            width: 200px;
         }
-        .block-child:active  .block-parent{
-            background-color: #7a3c3c;
+        /*-------Notify-Block-------*/
+        .notifyer-block{
+            width: 400px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #fff;
+            border-radius: 5px;
+            box-shadow: 0px -6px 43px -7px rgba(251,255,0,1);
+
+            background: radial-gradient(circle, rgba(131,255,123,1) 0%, rgba(27,24,24,1) 100%);
+            font-size: 40px;
+            color: #fff;
+            font-family: fantasy;
+            font-weight: 300;
+            position: absolute;
+            
+            margin-top: 10%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, 10%); 
+            transition: cubic-bezier(.950, 0.05, 0.855, 0.06) 1.5s;
         }
+
+        .notifyer-block .img-holder img{
+            margin-right: 10px;
+            min-width: 100px;
+            height: 100px;
+            
+        }
+        
+
 
     </style>
 </head>
 <body>
-    <input type="number" class="inpt">
-    <div for="" class="reslt"></div>
+    <div class="container">
+        <div class="input-holder">
+            <input type="number" class="inpt" placeholder="Введите значение в px">
+        </div>
 
-    <div class="block-parent">
-        <div class="block-child"></div>
+        <div class="reslt"></div>
+
+        <marquee behavior="" direction="right" scrollamount="100"    ><span>0101010011010101110101101010101010001001010101010101010101011101011010101010101010101000111010110101010101011101011010101010101001011101010</span></marquee>
+        <marquee behavior="" direction="" scrollamount="60"    ><span>010101000100101010101010101010101110101101010100100010010101010101010101010111010110101010101010101010010101010101001010101</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="20"    ><span>1001010101010011101011010101010110100010010101010101010101010111010110101010101010101010001010101010110010101010101010101010101</span></marquee>
+        <marquee behavior="" direction="" scrollamount="90"    ><span>0011010101110101101010101010000110101010001001010101010101010101011101011010101010101010101000110111010110101010101101011010101010100</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="10"    ><span>01110101101010101010111011101011010001001010101010101010101011101011010101010101010101000101010101101101010101010111010110101010101</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="150"    ><span>01010100110101011101011010101010111010110101010101011101011010101010101001011101010</span></marquee>
+        <marquee behavior="" direction="" scrollamount="40"    ><span>010101000100101010101010101010101010001001010101010101010101011101011010101010101010101001101011010101010101010101001010101</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="20"    ><span>1001010101010011101011010101000100101010101010101010101110101101010101010101010100010101101010101010110010101010101010101010101</span></marquee>
+        <marquee behavior="" direction="" scrollamount="70"    ><span>0011010101110101101010101010000010001001010101010101010101011101011010101010101010101001101010110111010110101010101101011010101010100</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="200"    ><span>01110101101010101010111010100010010101010101010101010111010110101010101010101010011010110101010101101101010101010111010110101010101</span></marquee>
+        <marquee behavior="" direction="left" scrollamount="50"    ><span>0101010011010101110101101001000100101010101010101010101110101101010101010101010100101010111010110101010101011101011010101010101001011101010</span></marquee>
+        <marquee behavior="" direction="" scrollamount="40"    ><span>010101000100101010101010101010101000100101010101010101010101110101101010101010101010100011101011010101010101010101001010101</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="650"    ><span>1001010101010011101011010010001001010101010101010101011101011010101010101010101001010101101010101010110010101010101010101010101</span></marquee>
+        <marquee behavior="" direction="" scrollamount="80"    ><span>0011010101110101101010101010000010001001010101010101010101011101011010101010101010101001101010110111010110101010101101011010101010100</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="5"    ><span>01110101101010101010111011101000100101010101010101010101110101101010101010101010100010110101010101101101010101010111010110101010101</span></marquee>
+        <marquee behavior="" direction="left" scrollamount="400"    ><span>0101010011010101110101101001000100101010101010101010101110101101010101010101010100101010111010110101010101011101011010101010101001011101010</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="200"    ><span>010101000100101010101010101010100010010101010101010101010111010110101010101010101010001011101011010101010101010101001010101</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="50"    ><span>1001010101010011101011010010001001010101010101010101011101011010101010101010101001010101101010101010110010101010101010101010101</span></marquee>
+        <marquee behavior="" direction="" scrollamount="100"    ><span>0011010101110101101010101010001000100101010101010101010101110101101010101010101010100001101010110111010110101010101101011010101010100</span></marquee>
+        <marquee behavior="" direction="left" scrollamount="30"    ><span>01110101101010101010111010100010010101010101010101010111010110101010101010101010011010110101010101101101010101010111010110101010101</span></marquee>
+        <marquee behavior="" direction="left" scrollamount="60"    ><span>0101010011010101110101101010001001010101010101010101011101011010101010101010101000101010111010110101010101011101011010101010101001011101010</span></marquee>
+        <marquee behavior="" direction="" scrollamount="10"    ><span>010101000100101010101010101001000100101010101010101010101110101101010101010101010100101011101011010101010101010101001010101</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="200"    ><span>1001010101010011101011010001001010101010101010101011101011010101010101010101000101010101101010101010110010101010101010101010101</span></marquee>
+        <marquee behavior="" direction="" scrollamount="70"    ><span>0011010101110101101010101010010001001010101010101010101011101011010101010101010101000001101010110111010110101010101101011010101010100</span></marquee>
+        <marquee behavior="" direction="right" scrollamount="800"    ><span>01110101101010101010101000100101010101010101010101110101101010101010101010100110111010110101010101101101010101010111010110101010101</span></marquee>
+
     </div>
+        <div class="notifyer-block">
+            <div class="img-holder">
+                <img src="/assets/icons/yoda.svg" alt="">
+            </div>
+            <span>В обмена буфер сохранился твой рассчет</span>
+        </div>
+        
 
-
+        
     <script>
 
         let input = document.querySelector('.inpt'),
-            result = document.querySelector('.reslt');
+            result = document.querySelector('.reslt'),
+            notifier = document.querySelector('.notifyer-block');
 
+        var timeoutID = null;
+
+       resultPreText()
+            
+     
         input.addEventListener('input', function(){
+            
+            result.textContent = ''
             let innresult = this.value / 19.2 + 'vw';
             result.innerText = innresult;
             navigator.clipboard.writeText(innresult)
-        })
 
+            autoCleaner(1500)
+
+        });
+
+        function resultPreText() {result.innerText = 'Результат в vw единицах'}
+
+        function autoCleaner(time=3000) {
+
+            if(timeoutID) clearTimeout(timeoutID)
+
+
+            timeoutID = eval(`setTimeout(cleaner, ${time})`)
+            
+            
+            return timeoutID
+        }
+
+      function cleaner() {
+                input.value = '';
+                result.textContent = '';
+                doNotify()
+                resultPreText()
+                
+                
+            }
+
+
+            function doNotify(){
+
+                    let opacy = 50;
+                    notifier.style.display = 'flex';
+                    notifier.style.opacity = '1'
+                    
+
+                    setTimeout(()=>{
+                        notifier.style.marginTop = '-10%';
+                        let int =  setInterval(()=>{
+                           
+                           if(opacy<1) clearInterval(int);
+                            notifier.style.opacity = `${(opacy-=2)/100}`;
+                        },100)
+
+                    },100)
+
+                    setTimeout(()=>{
+                        notifier.style.marginTop ='-50%'
+                    }, 2500)
+
+                    setTimeout(()=>{
+                        notifier.style.display = 'none';
+                        notifier.style.marginTop = '10%';
+                    },4500)
+
+            }
+                
+
+            let _line = document.getElementsByTagName('marquee');
+            
+            for(let i=0; i<_line.length;i++){
+
+                _line[i].addEventListener('mouseover', function(event){
+                this.style.color = 'red';
+                if(this.getAttribute('direction') == 'right') this.setAttribute('direction', 'left'); 
+                if(this.getAttribute('direction') == 'left') this.setAttribute('direction', 'right');
+                
+                let speed = +(this.getAttribute('scrollamount'));
+                speed+=10;
+                this.setAttribute('scrollamount', speed);
+
+                setTimeout(()=>{this.style.color = 'rgb(16, 255, 8)'},500)
+            })
+
+            }
+
+             
+            
 
     </script>
 </body>

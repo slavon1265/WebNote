@@ -12,7 +12,7 @@ html, body {
 }
 html{
     font-family: 'Open Sans', sans-serif;
-    font-size: 0.5208333333333334vw;
+    font-size: 8px;
     min-width: 100%;
 }
 
@@ -57,6 +57,26 @@ a{
     opacity: 0.8;
     font-weight: 800;
 }
+
+.dot {
+    width: 1vw;
+    height: 1vw;
+    float: left;
+    border: 1px solid;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid #7dc39f;
+    margin-right: 0.10416666666666667vw;
+}
+
+.dot:last-child{
+    margin-right: none;
+}
+
+.dot[active]{
+    background-color: #7dc39f;
+}
+
 /* =========HEADER============
 =============================== */
 header{
@@ -143,8 +163,7 @@ main .description{
     padding-top: 35px;
     padding-bottom: 43px;
 }
-main .description .container{
-}
+
 
 main .description .description__head{
     margin-bottom: 42px;
@@ -210,7 +229,6 @@ main .description .description__head span{
 }
 .description__content__item .img-element {
     display: flex;
-    justify-content: space-around;
 }
 
 
@@ -288,6 +306,20 @@ main .description .description__head span{
     align-items: center;
 }
 
+html body .users-block__icons .users__img{
+     
+}
+
+.users__img img{
+    max-width: 6.770833333333334vw;
+}
+
+[active-user]{
+    border: lemonchiffon 2px solid;
+    border-radius: 50%;
+    max-width: 8.958333333333334vw;
+}
+
 .reviews__arrow{
     padding: 0 1.5625vw;
     cursor: pointer;
@@ -336,7 +368,7 @@ font-size: 1.6rem;
 
 .about-us__body{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about-us__body .about-us__info{
@@ -346,22 +378,33 @@ font-size: 1.6rem;
     justify-content: center;
     
     width: 21.71875vw;
+    
     font-size: 1.9rem;
     font-weight: 400;
+   
 
     margin-left: 0.88541666666667vw;
+}
+.about-us__img{
+    display: flex;
+    align-items: flex-end;
+}
+.about-us__img img{
+    max-width: 42.8125vw;
+    max-height: 23.697916666666668vw;
 }
 
 .about-us__body .about-us__info span{
     margin-bottom: 2.13541666666667vw;
+    width: 100%;
 }
 
 .about-us__body .about-us__info .btn{
     text-align: center;
-    width:11.45833333333333vw;
     color: #000;
     border: 1px solid #7dc39f;
     padding: 0.83333333333333vw 1.25vw;
+    margin-bottom: 6.354166666666667vw;
 }
 
 
@@ -388,7 +431,6 @@ font-size: 1.6rem;
 .order__body{
     margin-top: 2.23958333333333vw;
     margin-bottom: 4.635416666666667vw;
-    width: 22.8125vw;
 }
 
 
@@ -396,18 +438,23 @@ font-size: 1.6rem;
 
 .order__body .modal{
     background-color: #f7f7f7;
+    
 }
+.modal__form{
 
+    
+}
 .modal .modal__head{
     color: #323232;
     font-size: 3.7rem;
     font-weight: 700;
+    padding: 0 2.0833333333333335vw;
+    text-align: center;
+    
+    margin: 0 6.770833333333334vw;
 
-   display: flex;
-   justify-content: center;
-
-   padding-top: 1.875vw;
-   padding-bottom: 1.77083333333333vw;
+    padding-top: 1.875vw;
+    padding-bottom: 1.77083333333333vw;
 }
 
 .modal .modal__body{
@@ -476,7 +523,6 @@ footer{
     color: #fff;
     width: 100%;
     background-color: #323232;
-    height: 18.75vw;
 }
 
 .footer__head{
@@ -491,6 +537,7 @@ footer{
 .footer__body{
     display: flex;
     justify-content: space-between;
+    padding-bottom: 8.75vw;
 }
 
 .footer__body-element{
@@ -549,11 +596,162 @@ footer .email-icon{
     justify-content: flex-end;
 } 
 
-.footer__links-links img{
+.footer__links-links  a {
     margin-right: 0.8333333333333334vw;
-    width: 1.6145833333333335vw;
 }
 
-footer .footer__links-links img:last-child{
+footer .footer__links-links a:last-child{
     margin-right: 0;
+}
+
+.footer__links-links a img{
+    
+    width: 2.1145833333333335vw;
+}
+
+
+
+/* ==============================
+=========MEDIA-QUERIES===========
+================================= */
+
+@media all and (max-width:1024px) {
+    html{
+        font-size: 7px;
+    }
+
+}
+
+@media all and (max-width:820px){
+    html{
+        font-size: 6px;
+    }
+}
+
+@media all and (max-width:670px){
+    html{
+        font-size: 10px;
+    }
+    .container{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    header{
+        background: url(/assets/img/header-bg-2.png);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: 100%;
+    }
+    header .navigation{
+        font-size: 1.5rem;
+    }
+    .header__container .header__body{
+        margin-top: 25.83333333333333vw;
+        margin-bottom: 25vw;
+    }
+
+    /*Description-Block*/
+
+   .description .container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .description__body{
+        flex-direction: column;
+    }
+
+    .description__slider .slider-holder{
+        width: 100%;
+        margin-bottom: 5vw;
+    }
+    .slider-holder img{
+        max-width: unset;
+        width: 100%;
+    }
+
+    .dot{
+        width: 3vw;
+        height: 3vw;
+        margin-bottom: 5vw;
+        margin-right: 0.50416666666666667vw;
+    }
+
+    .description__footer .order-btn{
+        min-width: 19.84375vw;
+        padding: 0.8916666666667vw 4.05208333333333vw;
+    }
+    /*----------Reviews-Block----------*/
+    .reviews__arrow{
+        display: none;
+    }
+    .users__img img{
+        max-width: 12.770833333333334vw;
+    }
+    .reviews__user-text{
+        width: 60.15625vw;
+        text-align: center;
+    }
+
+    /*-------------About-US-----------------*/
+    .about-us .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-us__body{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .about-us__body .about-us__info{
+        width: 100%;
+        text-align: center;
+    }
+    .about-us__img{
+        justify-content: center;
+    }
+    /*-----------Order------------*/
+    .form-descript .form-descript-text {
+        width: 80%;
+    }
+    .modal .form-descript {
+        padding: 5vw 0;
+    }
+    /*----------Footer------------*/
+    footer .container{
+        display: flex;
+        flex-direction: column;
+    }
+    footer .container .footer__body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .footer__body>div{
+        text-align: center;
+    }
+
+    .footer__body-element{
+        margin-top: 3vw;
+        text-align: center;
+    }
+    .footer__links-links{
+        justify-content: center;
+    }
+    .footer__links-links a img{
+        width: 5vw;
+    }
+}
+
+@media all and (max-width:550px){
+    header .navigation{
+        font-size: 1rem;
+    }
+}
+@media all and (max-width:430px){
+    header .navigation{
+        font-size: 0.8rem;
+    }
 }
